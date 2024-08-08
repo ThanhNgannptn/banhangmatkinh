@@ -1,0 +1,220 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="WebMatKinh.MainMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+  
+    <title>Cửa Hàng Mắt Kính</title>
+    <link href="STYLE.CSS" rel="Stylesheet" type="text/css" />
+  
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            background-color: #00CCFF;
+        }
+        .auto-style3 {
+            width: 508px;
+        }
+        .auto-style4 {
+            position: absolute;
+            z-index: 2;
+            padding-top: 5px;
+            padding-right: 5px;
+            top: 25px;
+            right: 10px;
+            width: 16px;
+        }
+        #Menu1 a.static {
+    color: Black;
+    text-decoration: none;
+    margin-right: 10px;
+}
+        .auto-style8 {
+            margin-right: 0px;
+        }
+        .auto-style9 {
+            width: 1254px;
+        }
+        .auto-style16 {
+            width: 1287px;
+        }
+        .auto-style17 {
+            width: 1281px;
+        }
+        .auto-style28 {
+            text-align: left;
+        }
+        footer {
+    background-color: cadetblue;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+    float: left;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Thiết lập CSS cho liên kết */
+a {
+    color: #0077ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+        .auto-style29 {
+            width: 1551px;
+        }
+
+    </style>
+</head>
+<body style="width: 1582px; height: 260px">
+    <header>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style29">
+                        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" CssClass="auto-style8" ForeColor="#284E98" OnPreRender="Menu1_PreRender" style="font-size: x-large; background-color: #00CCFF" BackColor="#B5C7DE" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" StaticSubMenuIndent="10px">
+                            <DynamicHoverStyle BackColor="#66CCFF" />
+                            <DynamicMenuItemStyle BackColor="#99CCFF" />
+                            <DynamicMenuStyle BackColor="#99CCFF" />
+                            <DynamicSelectedStyle BackColor="#66CCFF" />
+                            <Items>
+                                <asp:MenuItem Text="Trang Chủ" Value="Trang Chủ" NavigateUrl="~/index.aspx" ImageUrl="~/Images/icons8-home-48.png"></asp:MenuItem>
+                                <asp:MenuItem Text="Danh Mục Sản Phẩm" Value="Danh Mục Sản Phẩm" NavigateUrl="~/DMSP.aspx" ImageUrl="~/Images/icons8-medium-priority-48.png">
+                                    <asp:MenuItem Text="Gọng Kính" Value="3004"></asp:MenuItem>
+                                    <asp:MenuItem Text="Tròng Kính" Value="3003"></asp:MenuItem>
+                                    <asp:MenuItem Text="Kính Râm" Value="3002"></asp:MenuItem>
+                                    <asp:MenuItem Text="Kính Trẻ Em" Value="3001"></asp:MenuItem>
+                                    <asp:MenuItem Text="Kính Bảo Hộ" Value="3006"></asp:MenuItem>
+                                    <asp:MenuItem Text="Phụ Kiện Kính" Value="3005"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Quản Lý" Value="Quản Lý" NavigateUrl="~/PhanQuyen.aspx" ImageUrl="~/Images/icons8-product-48.png"></asp:MenuItem>
+                                <asp:MenuItem Text="Đăng Nhập" Value="Đăng Nhập" NavigateUrl="~/login.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Đăng Ký" Value="Đăng Ký" NavigateUrl="~/DangKy.aspx"></asp:MenuItem>
+                            </Items>
+                            <StaticHoverStyle BackColor="#CCFFFF" ForeColor="Black" />
+                            <StaticMenuItemStyle ForeColor="Black" />
+                            <StaticMenuStyle BackColor="#00CCFF" />
+                            <StaticSelectedStyle ForeColor="Black" />
+                            <StaticItemTemplate>
+                                <%# Eval("Text") %>
+                            </StaticItemTemplate>
+                        </asp:Menu>
+
+
+                        </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td class="auto-style3">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div>
+                            <div>
+                                <div>
+                                    <asp:TextBox ID="txtSearch" runat="server" CssClass="auto-style28" Height="28px" Width="211px" AutoPostBack="True"></asp:TextBox>
+                                    <asp:ImageButton ID="ibtn" runat="server" Height="22px" ImageUrl="~/Images/loupe.png" Width="27px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:ImageButton ID="ImageButton4" runat="server" Height="23px" ImageUrl="~/Images/user.png" Width="30px" PostBackUrl="~/login.aspx" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </div>
+                            </div>
+                        </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td class="auto-style17">
+                        &nbsp;<div id="giohang" class="auto-style16">
+                    <div class="auto-style4">
+                        <asp:Label ID="lbSoluong" runat="server" Text="0" Font-Size="X-Large"
+                            Font-Bold="True" ForeColor="White" CssClass="auto-style9"></asp:Label>
+                    </div>
+                    <div class="hinhgiohang">
+                        <a href="giohang.aspx" id="hinhgiohang">
+                        <asp:Image ID="imgGiohang" runat="server" Height="57px"
+                                ImageUrl="~/Images/unnamed-removebg-preview.jpg" Width="72px" DescriptionUrl="~/Customer/GioHang.aspx" />
+                        </a>
+                    </div>
+                </div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                </tr>
+                </table>
+</header>
+
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <br />
+        </asp:ContentPlaceHolder>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Liên hệ</h3>
+                    <p>Địa chỉ: 385 Tăng Nhơn Phú Thủ Đức</p>
+                    <p>Email: 2121005173@sv.ufm.edu.vn</p>
+                    <p>Điện thoại: 123-456-7890</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liên kết nhanh</h3>
+                        <a href="index.aspx">Trang chủ</a></li> <br />
+                        <a href="DMSP.aspx">Sản phẩm</a></li> <br />
+                        <a href="index.aspx">Giới thiệu</a></li> <br />
+                        <a href="index.aspx">Liên hệ</a> <br />
+                </div>
+                <div class="footer-section">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <ul>
+                        <li><a href="#">
+                            <img src="Images/icons8-facebook-48.png" /> </a></li>
+                        <li><a href="#">
+                            <img src="Images/icons8-line-48.png" /></a></li>
+                        <li><a href="#">
+                            <img src="Images/icons8-phone-48.png" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+        </form>
+ </body>
+</html>

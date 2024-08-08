@@ -1,0 +1,370 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D736F46D-56C5-49C6-AA10-7115809616AD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebMatKinh</RootNamespace>
+    <AssemblyName>WebMatKinh</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44345</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\HomeQL.aspx" />
+    <Content Include="DangKy.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="Images\5555.png" />
+    <Content Include="Images\banner-matkinh3-16659454631519261648.jpg" />
+    <Content Include="Images\Bb.jpg" />
+    <Content Include="Images\d520d7bc37c3e19db8d2 %281%29.jpg" />
+    <Content Include="Images\iconfinder-3-avatar-2754579_120516.png" />
+    <Content Include="Images\iconfinder-9-avatar-2754584_120518.png" />
+    <Content Include="Images\icons8-add-64.png" />
+    <Content Include="Images\icons8-facebook-48.png" />
+    <Content Include="Images\icons8-filter-64.png" />
+    <Content Include="Images\icons8-glasses-48.png" />
+    <Content Include="Images\icons8-glasses-60 %281%29.png" />
+    <Content Include="Images\icons8-glasses-60.png" />
+    <Content Include="Images\icons8-glasses-64 %281%29.png" />
+    <Content Include="Images\icons8-glasses-64 %282%29.png" />
+    <Content Include="Images\icons8-glasses-64.png" />
+    <Content Include="Images\icons8-home-48.png" />
+    <Content Include="Images\icons8-line-48.png" />
+    <Content Include="Images\icons8-log-out-64.png" />
+    <Content Include="Images\icons8-medium-priority-48.png" />
+    <Content Include="Images\icons8-phone-48.png" />
+    <Content Include="Images\icons8-product-100.png" />
+    <Content Include="Images\icons8-product-48.png" />
+    <Content Include="Images\k1.jpg" />
+    <Content Include="Images\k2.jpg" />
+    <Content Include="Images\k3.jpg" />
+    <Content Include="Images\k4.jpg" />
+    <Content Include="Images\km1.jpg" />
+    <Content Include="Images\km2.jpg" />
+    <Content Include="Images\km3.jpg" />
+    <Content Include="Images\brkm.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="Admin\QLLSP.aspx" />
+    <Content Include="Admin\QLSP.aspx" />
+    <Content Include="Admin\ThemLSP.aspx" />
+    <Content Include="Admin\ThemSanPham.aspx" />
+    <Content Include="App_Data\quanlymatkinh.mdf" />
+    <Content Include="App_Data\quanlymatkinh_log.ldf" />
+    <Content Include="ChonSP.aspx" />
+    <Content Include="Customer\DonHang.aspx" />
+    <Content Include="Customer\GioHang.aspx" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\11.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\2222.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\33333.jpg" />
+    <Content Include="Images\4.jpg" />
+    <Content Include="Images\5.jpg" />
+    <Content Include="Images\6666.jpg" />
+    <Content Include="Images\9.jpg" />
+    <Content Include="Images\987.jpg" />
+    <Content Include="Images\bachkim.jpg" />
+    <Content Include="Images\bao deo hong.jpg" />
+    <Content Include="Images\Chemil.jpg" />
+    <Content Include="Images\chup-hinh-mat-kinh.jpg" />
+    <Content Include="Images\crizal.jpg" />
+    <Content Include="Images\d.jpg" />
+    <Content Include="Images\dddd .jpg" />
+    <Content Include="Images\de.jpg" />
+    <Content Include="Images\dhc.jpg" />
+    <Content Include="Images\do.jpg" />
+    <Content Include="Images\dothiluc.jpg" />
+    <Content Include="Images\dx.jpg" />
+    <Content Include="Images\element.jpg" />
+    <Content Include="Images\f.jpg" />
+    <Content Include="Images\f05.jpg" />
+    <Content Include="Images\felicity.jpg" />
+    <Content Include="Images\gen8.jpg" />
+    <Content Include="Images\Gong kinh can dep.jpg" />
+    <Content Include="Images\Gong kinh MOLSION MJ6135.jpg" />
+    <Content Include="Images\Gong kinh molsion.jpg" />
+    <Content Include="Images\Gong kinh PO.jpg" />
+    <Content Include="Images\gong-kinh-can-dep-levelnine-lv-88246-3-768x768.jpg" />
+    <Content Include="Images\gong-kinh-can-dep-levelnine-lv88242-7-768x768.jpg" />
+    <Content Include="Images\gong-kinh-can-dep-povino-22669-8-768x768.jpg" />
+    <Content Include="Images\gong-kinh-felicity-3753-5-768x768.jpg" />
+    <Content Include="Images\gong-kinh-fiovino-m1026-6-768x768.jpg" />
+    <Content Include="Images\gong-kinh-povino-po20112-4-768x768.jpg" />
+    <Content Include="Images\gong-kinh-povino-po9997-6.jpg" />
+    <Content Include="Images\gong-kinh-povino-po9997-9-768x768.jpg" />
+    <Content Include="Images\gong-kinh-povino-poO6774-6-768x768.jpg" />
+    <Content Include="Images\gong-kinh-povino-poO6774-7.jpg" />
+    <Content Include="Images\hc.jpg" />
+    <Content Include="Images\hemi.jpg" />
+    <Content Include="Images\hockyx.jpg" />
+    <Content Include="Images\hoga.jpg" />
+    <Content Include="Images\hopkinh.jpg" />
+    <Content Include="Images\hoya.jpg" />
+    <Content Include="Images\icons8-cancel-60.png" />
+    <Content Include="Images\icons8-delete-64.png" />
+    <Content Include="Images\icons8-edit-64.png" />
+    <Content Include="Images\icons8-ok-64.png" />
+    <Content Include="Images\khan.jpg" />
+    <Content Include="Images\kodak.jpg" />
+    <Content Include="Images\la.jpg" />
+    <Content Include="Images\loupe.png" />
+    <Content Include="Images\ma05.jpg" />
+    <Content Include="Images\ma06.jpg" />
+    <Content Include="Images\ma07.jpg" />
+    <Content Include="Images\Mayvesinhkinh.jpg" />
+    <Content Include="Images\nau.jpg" />
+    <Content Include="Images\p05.jpg" />
+    <Content Include="Images\p23.jpg" />
+    <Content Include="Images\p26.jpg" />
+    <Content Include="Images\p90.jpg" />
+    <Content Include="Images\pc2.jpg" />
+    <Content Include="Images\plus.jpg" />
+    <Content Include="Images\prevencia.jpg" />
+    <Content Include="Images\py.jpg" />
+    <Content Include="Images\qa.jpg" />
+    <Content Include="Images\rocky.jpg" />
+    <Content Include="Images\rockyxl.jpg" />
+    <Content Include="Images\ss.jpg" />
+    <Content Include="Images\thc.jpg" />
+    <Content Include="Images\thiet-ke-cua-hang-kinh-mat-6.jpg" />
+    <Content Include="Images\tim.jpg" />
+    <Content Include="Images\to.jpg" />
+    <Content Include="Images\trang.jpg" />
+    <Content Include="Images\Tròng kính đổi màu xanh.jpg" />
+    <Content Include="Images\unnamed-removebg-preview.jpg" />
+    <Content Include="Images\user.png" />
+    <Content Include="Images\vang.jpg" />
+    <Content Include="Images\vs7.jpg" />
+    <Content Include="Images\xanh.jpg" />
+    <Content Include="Images\xt.jpg" />
+    <Content Include="Images\zexiss.jpg" />
+    <Content Include="PhanQuyen.aspx" />
+    <Content Include="QuenMatKhau.aspx" />
+    <Content Include="STYLE.css" />
+    <Content Include="Customer\ThongBao.aspx" />
+    <Content Include="DMSP.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\HomeQL.aspx.cs">
+      <DependentUpon>HomeQL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\HomeQL.aspx.designer.cs">
+      <DependentUpon>HomeQL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DangKy.aspx.cs">
+      <DependentUpon>DangKy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DangKy.aspx.designer.cs">
+      <DependentUpon>DangKy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QLLSP.aspx.cs">
+      <DependentUpon>QLLSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QLLSP.aspx.designer.cs">
+      <DependentUpon>QLLSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QLSP.aspx.cs">
+      <DependentUpon>QLSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QLSP.aspx.designer.cs">
+      <DependentUpon>QLSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ThemLSP.aspx.cs">
+      <DependentUpon>ThemLSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ThemLSP.aspx.designer.cs">
+      <DependentUpon>ThemLSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ThemSanPham.aspx.cs">
+      <DependentUpon>ThemSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ThemSanPham.aspx.designer.cs">
+      <DependentUpon>ThemSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChonSP.aspx.cs">
+      <DependentUpon>ChonSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChonSP.aspx.designer.cs">
+      <DependentUpon>ChonSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\DonHang.aspx.cs">
+      <DependentUpon>DonHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\DonHang.aspx.designer.cs">
+      <DependentUpon>DonHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\GioHang.aspx.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\GioHang.aspx.designer.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainMaster.Master.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMaster.Master.designer.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PhanQuyen.aspx.cs">
+      <DependentUpon>PhanQuyen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhanQuyen.aspx.designer.cs">
+      <DependentUpon>PhanQuyen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Customer\ThongBao.aspx.cs">
+      <DependentUpon>ThongBao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\ThongBao.aspx.designer.cs">
+      <DependentUpon>ThongBao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMSP.aspx.cs">
+      <DependentUpon>DMSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMSP.aspx.designer.cs">
+      <DependentUpon>DMSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuenMatKhau.aspx.cs">
+      <DependentUpon>QuenMatKhau.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuenMatKhau.aspx.designer.cs">
+      <DependentUpon>QuenMatKhau.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MainMaster.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53798</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44345/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
